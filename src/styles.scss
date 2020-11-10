@@ -1,0 +1,303 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(/assets/font/HelveticaNeue.ttf);
+}
+@font-face {
+  font-family: My-Demi;
+  src: url(/assets/font/FuturaBQ-DemiBold.otf);
+}
+body {
+	background:#eee;
+}
+
+/*====== CATALOGUE 1 ======*/
+
+.categories_heading {
+		margin-left: 18px;
+		
+}
+.categories_heading_txt {
+		font-family:MY-DEMI;
+		font-size:30px;
+		font-weight:500;
+		
+}
+.main_categories {
+		width:100%;
+		overflow:auto;
+}
+.main_categories::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+.main_categories::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: transparent;
+}
+.sub_categories {
+		width:max-content;
+}
+.categories_card {
+		box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.55);
+		border-radius: 10px;
+		background-repeat:no-repeat !important;
+		background-size: cover !important;
+		background-position:center !important;
+		padding: 16px 33px 10px 24px;
+		width: 180px;
+		height:180px;
+		margin-right: 10px;
+}
+.categories_name {
+		position: relative;
+}
+.categories_txt {
+		font-family: My-Demi;
+		font-weight: 500;
+		color: #fff;
+		font-size: 20px;
+		margin: 0px;
+		text-shadow: 0px 0px 6px #000000d1;
+		position: absolute;
+		top: 121px;		
+}
+.brand_card {
+		border-radius: 7px;
+		background-repeat:no-repeat !important;
+		background-size: cover !important;
+		background-position:center !important;
+		padding: 16px 33px 10px 24px;
+		width: 100%;
+		height:150px;	
+}
+.brand_name {
+	
+}
+.brand_txt {
+		font-family: My-Demi;
+		font-weight: 500;
+		color: #000;
+		font-size: 22px;
+		margin-top: 10px;
+}
+.products {
+		box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.55);
+		border-radius: 10px;
+		background-repeat:no-repeat !important;
+		background-size: cover !important;
+		background-position:center !important;
+		padding: 26px 20px 5px 14px;
+		width: 100%;
+		background-color:#fff;
+}
+.p_img {
+		width:115px;
+		height:115px;
+		border-radius: 10px;
+		background-repeat:no-repeat !important;
+		background-size: cover !important;
+		background-position:center !important;
+}
+.description {
+		width:54%;
+		
+}
+.p_name {
+		font-family: My-Demi;
+		font-weight: 500;
+		color: #000;
+		font-size: 20px;	
+}
+.p_about {
+		font-weight: 500;
+		color: #000;
+		font-size: 12px;
+		
+}
+.add_btn {
+		 background: #03b0b1 0% 0% no-repeat padding-box;
+		border-radius: 30px;
+		padding: 5px 30px;
+}
+.add_btns {
+		letter-spacing: 0.35px;
+		color: #FFFFFF;
+		font-family: MY-DEMI;
+		font-size: 14px;
+}
+.shop_detail {
+		border-radius: 10px;
+		background-color: #9999994d;
+		padding: 16px 33px 10px 24px;
+}
+.viewtxt {
+		color: #03b0b1;
+		font-size: 18px;
+		font-family: 'MY-DEMI';
+		text-decoration: none;
+}
+.viewtxt:hover {
+		color: #03b0b1;
+		text-decoration: none;
+}
+.company_categ_card {
+		box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.55);
+		border-radius: 14px;
+		background-repeat:no-repeat !important;
+		background-size: cover !important;
+		background-position:center !important;
+		padding: 24px 33px 10px 30px;
+		width: 100%;
+		height:180px;
+}
+.company_categ_name {
+		position: relative;
+}
+.company_categ_txt {
+		font-family: My-Demi;
+		font-weight: 500;
+		color: #fff;
+		font-size: 20px;
+		margin: 0px;
+		text-shadow: 0px 0px 6px #000000d1;
+		position: absolute;
+		top: 121px;		
+}
+
+
+/*======= ORDER DETAILS =======*/
+
+
+.details_txt {
+		font-family: My-Demi;
+		font-weight: 500;
+		color: #000;
+		font-size: 22px;
+}
+.id_txt {
+		font-family: My-Demi;
+		font-weight: 500;
+		color: #000;
+		font-size: 14px;
+}
+.sign_btn {
+		background: #DB1923 0% 0% no-repeat padding-box;
+		border-radius: 28px;
+		padding: 5px 50px;
+}
+.sign_btn:hover {
+		color:#fff;
+}
+.sign_btn_txt {
+		letter-spacing: 0.35px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		font-family: My-Demi;
+		font-size:15px;
+		
+}
+.btns {
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    font-family: MY-DEMI;
+    font-size: 22px;
+}
+.active {
+		background-color:green;
+		width:6px;
+		height:6px;
+		border-radius:50%;
+}
+.order_photo {
+		width:100px;
+		height:100px;
+}
+.customer_txt {
+		font-family: My-Demi;
+		font-weight: 500;
+		color: #000;
+		font-size: 14px;
+}
+.c_detail {
+		width:50%;
+		margin:auto;
+}
+.cancel_btn {
+		background: white;
+		border-radius: 30px;
+		padding: 5px 38px;
+		border: 2px solid #03b0b1;
+}
+.cancel_txt {
+		letter-spacing: 0.35px;
+		color: #000;
+		font-family: MY-DEMI;
+		font-size: 22px;	
+}
+.cancel_txt:hover {
+		color: #000;	
+}
+.filter_btn {
+		background: #03b0b1 0% 0% no-repeat padding-box;
+		border-radius: 18px;
+		padding: 5px 0px 8px 12px;
+}
+.filter_txt {
+		letter-spacing: 0.35px;
+		color: #000;
+		font-family: MY-DEMI;
+		font-size: 18px;	
+}
+.order_card {
+		box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.55);
+		border-radius: 10px;
+		background-repeat:no-repeat !important;
+		background-size: cover !important;
+		background-position:center !important;
+		padding: 26px 20px 5px 14px;
+		width: 100%;
+		background-color:#fff;
+}
+.detail_btn {
+		border:1px solid #000;
+		padding: 3px 6px 4px 6px;
+		margin-bottom: 13px;
+}
+
+@media (max-width: 800px) {
+	.categories_heading {
+		text-align: center;
+	}
+	.categories_heading_txt {
+		font-size: 25px;	
+	}
+	.p_about {
+		font-size: 12px;
+	}
+	.company_categ_card {
+		height:160px;
+		padding: 1px 33px 10px 24px;
+	}
+	.company_txt {
+		font-size: 25px;
+	}
+	.btns {
+		font-size:15px;
+	}
+	.c_detail {
+		width:100%;
+	}
+	.order_photo {
+		width: 80px;
+		height: 80px;
+	}
+	.cancel_txt {
+		font-size: 15px;	
+	}
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

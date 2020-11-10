@@ -1,0 +1,42 @@
+.sub_card {
+		padding-top:120px;
+		padding-bottom: 30px;
+}
+
+.card1 {
+		box-shadow: 0px 4px 25px rgb(0, 0, 0, 0.3);
+		border-radius: 30px;
+		background: #fff;
+		padding: 16px 33px 10px 24px;
+		width: 100%;
+}
+.card_heading {
+		font-size: 25px;
+		font-family: 'MY-DEMI';
+		font-weight: 400;
+}
+.sign_btn {
+    background: #03b0b1 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    padding: 5px 50px;
+}
+.btns {
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    font-family: MY-DEMI;
+    font-size: 22px;
+}
+
+@media (max-width: 800px) {
+	.card_heading {
+		font-size:15px;
+	}
+	.btns {
+		font-size:15px;
+	}
+	.sub_card {
+		padding-top: 92px;
+		padding-bottom: 6px;
+	}
+		
+}
