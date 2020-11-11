@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shop-header.component.scss']
 })
 export class ShopHeaderComponent implements OnInit {
+	showShare=false;
+	
 
   constructor() { }
 

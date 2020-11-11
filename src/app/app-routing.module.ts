@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/stores/home/home.component';
 import { CheckoutComponent } from './pages/stores/checkout/checkout.component';
 import { OrderDetailsComponent } from './pages/shop/order-details/order-details.component';
 import { OrdersComponent } from './pages/shop/orders/orders.component';
+import { CompareComponent } from './pages/stores/compare/compare.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
 	{
 		path:'orders',
 		component:OrdersComponent
+	},
+	{
+		path:'compare',
+		component:CompareComponent
 	},
 	{
 		path:'order-details',

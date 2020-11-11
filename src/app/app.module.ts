@@ -20,7 +20,8 @@ import { OrderDetailsComponent } from './pages/shop/order-details/order-details.
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { CompareComponent } from './pages/stores/compare/compare.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -39,12 +40,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CheckoutComponent,
     OrdersComponent,
     OrderDetailsComponent,
+    CompareComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+	MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
