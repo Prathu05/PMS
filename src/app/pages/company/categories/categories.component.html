@@ -3,120 +3,17 @@
 		<div class="container">
 			<app-company-header></app-company-header>
 				<div class="text-center categories_heading mt-4 mt-lg-5">
-					<h3 class="categories_heading_txt">Top Categories</h3>
+					<h3 class="categories_heading_txt">All Categories</h3>
 				</div>
 			<div class="row mt-3 mt-lg-4">
-				<div class="col-lg-3 col-6">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/camera.jpg');">
+				<div class="col-lg-3 col-6" *ngFor="let cat of main.categories">
+					<div class="company_categ_card d-inline-block" [ngStyle]="{'background': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('+global.ASSETS_URL+cat.category_logo+')'}">
 						<div class="company_categ_name">
-							<p class="company_categ_txt">Camera</p>
+							<p class="company_categ_txt">{{cat.category_name}}</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-6">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/phone.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Phone</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-0">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/tablet.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Tablet</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-0">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/headphone.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Headphone</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/laptop.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Laptop</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/accessories.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Accessories</p>
-						</div>
-					</div>		
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/laptop.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Laptop</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/accessories.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Accessories</p>
-						</div>
-					</div>		
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/laptop.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Laptop</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/accessories.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Accessories</p>
-						</div>
-					</div>		
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/laptop.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Laptop</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/accessories.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Accessories</p>
-						</div>
-					</div>		
-				</div><div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/laptop.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Laptop</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/accessories.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Accessories</p>
-						</div>
-					</div>		
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/laptop.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Laptop</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 mt-4 mt-lg-4">
-					<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/accessories.jpg');">
-						<div class="company_categ_name">
-							<p class="company_categ_txt">Accessories</p>
-						</div>
-					</div>		
-				</div>
+				
 			</div>
 		</div>
 	</div>

@@ -19,50 +19,46 @@
 									<div class="form-group mt-1">
 											<label class="label_txt">Name :</label>
 											<div class="input">
-												<input value="" class="input_txt">
+												<input [(ngModel)]="name" class="input_txt">
 											</div>
 									</div>
 									<div class="form-group mt-1">
 											<label class="label_txt">Mobile No. :</label>
 											<div class="input">
-												<input value="" class="input_txt">
+												<input [(ngModel)]="mobile" class="input_txt">
 											</div>
 									</div>
 									<div class="form-group mt-1">
 											<label class="label_txt">Email Id :</label>
 											<div class="input">
-												<input value="" class="input_txt">
+												<input [(ngModel)]="email" class="input_txt">
 											</div>
 									</div>
-									<div class="form-group mt-1">
-											<label class="label_txt">Location :</label>
-											<div class="input">
-												<input value="" class="input_txt">
-											</div>
-									</div>
+									
 									
 								</div>
 								<div class="col-lg-6 mt-2">
 									<div class="form-group mt-1">
 											<label class="label_txt">Bussiness Name :</label>
 											<div class="input">
-												<input value="" class="input_txt">
+												<input [(ngModel)]="business_name" class="input_txt">
 											</div>
+									</div>
+									<div class="form-group mt-1">
+										<label class="label_txt">Address :</label>
+										<div class="input">
+											<input [(ngModel)]="address" class="input_txt">
+										</div>
 									</div>
 									<div class="form-group mt-1">
 											<label class="label_txt">Password :</label>
 											<div class="input">
-												<input value="" class="input_txt">
+												<input [(ngModel)]="password" type="password" class="input_txt">
 											</div>
 									</div>
-									<div class="form-group mt-1">
-											<label class="label_txt">Confirm Password :</label>
-											<div class="input">
-												<input value="" class="input_txt">
-											</div>
-									</div>
+									
 									<div class="mt-4 text-center">
-										<a href="#" class="btn sign_btn sign_btn_txt"> SUBMIT</a>
+										<a (click)="register()" class="btn sign_btn sign_btn_txt"> SUBMIT</a>
 									</div>
 								
 								

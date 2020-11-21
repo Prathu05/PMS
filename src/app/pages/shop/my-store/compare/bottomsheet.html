@@ -1,0 +1,9 @@
+<div class="p-2">
+    <h2>Select Product to compare</h2>
+    <div>
+        <input class="form-control" placeholder="Search..." (input)="filterModel($event)">
+    </div>
+    <div class="models">
+        <a class="w-100 d-block p-2 border-bottom text-white" style="text-decoration: none;" *ngFor="let m of searched" (click)="selectModel(m)">{{m.catalog_product.product_name}}</a>
+    </div>
+</div>

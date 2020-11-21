@@ -1,0 +1,35 @@
+<div class="container">			
+    <app-shop-header></app-shop-header>
+    <div class="row mt-3 ">
+        <div class="col-md-10 mx-auto mt-lg-5" >
+            <div class="model-details">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <div class="card brand-card" >
+                            <div class="brand-img p-2">
+                                <img [src]="global.ASSETS_URL+product.product_logo" class="mw-100 mb-2">
+                                <div>
+                                    <button class="btn add_btn add_btns btn-sm px-5" (click)="share()"> Share </button>
+                                </div>    
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <h2 class="mb-1">{{product.product_name}}</h2>
+                        <h4>Price: Rs. {{product.product_price}}</h4>
+                        <div [innerHtml]="product.product_summary">
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-12">
+                        <h2>Description</h2>
+                        <div [innerHtml]="product.product_long_description"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

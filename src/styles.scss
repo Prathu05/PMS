@@ -12,6 +12,10 @@
 body {
 	background:#eee;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat!important;
+    font-weight: 600!important;
+}
 
 /*====== CATALOGUE 1 ======*/
 
@@ -20,7 +24,6 @@ body {
 		
 }
 .categories_heading_txt {
-		font-family:MY-DEMI;
 		font-size:30px;
 		font-weight:500;
 		
@@ -55,7 +58,6 @@ body {
 		position: relative;
 }
 .categories_txt {
-		font-family: My-Demi;
 		font-weight: 500;
 		color: #fff;
 		font-size: 20px;
@@ -69,15 +71,18 @@ body {
 		background-repeat:no-repeat !important;
 		background-size: cover !important;
 		background-position:center !important;
-		padding: 16px 33px 10px 24px;
+		padding: 20px;
+
 		width: 100%;
-		height:150px;	
+		border: 2px solid #aaa;	
+
+		background: #fff;
+		margin-bottom: 15px;
 }
 .brand_name {
 	
 }
 .brand_txt {
-		font-family: My-Demi;
 		font-weight: 500;
 		color: #000;
 		font-size: 22px;
@@ -89,13 +94,12 @@ body {
 		background-repeat:no-repeat !important;
 		background-size: cover !important;
 		background-position:center !important;
-		padding: 26px 20px 5px 14px;
+		padding: 20px;
 		width: 100%;
 		background-color:#fff;
 }
 .p_img {
 		width:115px;
-		height:115px;
 		border-radius: 10px;
 		background-repeat:no-repeat !important;
 		background-size: cover !important;
@@ -106,13 +110,10 @@ body {
 		
 }
 .p_name {
-		font-family: My-Demi;
-		font-weight: 500;
 		color: #000;
 		font-size: 20px;	
 }
 .p_about {
-		font-weight: 500;
 		color: #000;
 		font-size: 12px;
 		
@@ -125,7 +126,6 @@ body {
 .add_btns {
 		letter-spacing: 0.35px;
 		color: #FFFFFF;
-		font-family: MY-DEMI;
 		font-size: 14px;
 }
 .shop_detail {
@@ -136,7 +136,6 @@ body {
 .viewtxt {
 		color: #03b0b1;
 		font-size: 18px;
-		font-family: 'MY-DEMI';
 		text-decoration: none;
 }
 .viewtxt:hover {
@@ -157,8 +156,6 @@ body {
 		position: relative;
 }
 .company_categ_txt {
-		font-family: My-Demi;
-		font-weight: 500;
 		color: #fff;
 		font-size: 20px;
 		margin: 0px;
@@ -172,14 +169,10 @@ body {
 
 
 .details_txt {
-		font-family: My-Demi;
-		font-weight: 500;
 		color: #000;
 		font-size: 22px;
 }
 .id_txt {
-		font-family: My-Demi;
-		font-weight: 500;
 		color: #000;
 		font-size: 14px;
 }
@@ -195,14 +188,12 @@ body {
 		letter-spacing: 0.35px;
 		color: #FFFFFF;
 		text-transform: uppercase;
-		font-family: My-Demi;
 		font-size:15px;
 		
 }
 .btns {
     letter-spacing: 0.35px;
     color: #FFFFFF;
-    font-family: MY-DEMI;
     font-size: 22px;
 }
 .active {
@@ -216,7 +207,6 @@ body {
 		height:100px;
 }
 .customer_txt {
-		font-family: My-Demi;
 		font-weight: 500;
 		color: #000;
 		font-size: 14px;
@@ -234,7 +224,6 @@ body {
 .cancel_txt {
 		letter-spacing: 0.35px;
 		color: #000;
-		font-family: MY-DEMI;
 		font-size: 22px;	
 }
 .cancel_txt:hover {
@@ -248,7 +237,6 @@ body {
 .filter_txt {
 		letter-spacing: 0.35px;
 		color: #000;
-		font-family: MY-DEMI;
 		font-size: 18px;	
 }
 .order_card {
@@ -301,3 +289,8 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+hr {
+    width: 90%;
+    background: #ddd;
+    border-top: 1px solid #ddd;
+}

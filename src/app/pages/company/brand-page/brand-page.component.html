@@ -1,0 +1,30 @@
+<div class="subdash pt-4">
+	<div class="container">
+		<app-company-header></app-company-header>
+		
+		<div class="d-flex justify-content-between align-items-center categories_heading mt-4 mt-lg-5">
+				<h3 class="categories_heading_txt">Available Products</h3>
+            </div>
+            <div class="mt-4 mt-lg-5 text-center" *ngIf="loader_2">
+                <h4>Loading Data...</h4>
+            </div>
+		<div class="row mt-4 mb-4" *ngIf="!loader_2">
+			<div class="col-lg-4 col-12 mb-3" *ngFor="let product of products">
+				<div class="products d-flex justify-content-between">
+					<div class="text-center">
+						<div class="p_img">
+							<img [src]="global.ASSETS_URL+product.product_logo" class="mw-100">
+						</div>
+						<a href="javascript:;" (click)="main.addProductToShop(product.id)" class="btn add_btn add_btns align-items-center mt-3"> + Add</a>
+					</div>
+					<div class="description">
+						<h4 class="p_name">{{product.product_name}}</h4>
+						<p class="p_about"><em>Price :</em> <i class="fa fa-rupee-sign"></i> {{product.product_price}}<br>
+						{{product.product_description.substring(0,200)}}...
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

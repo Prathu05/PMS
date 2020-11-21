@@ -3,162 +3,52 @@
 		<app-company-header></app-company-header>
 			<div class="d-flex justify-content-between align-items-center categories_heading mt-4 mt-lg-5">
 				<h3 class="categories_heading_txt">Top Categories</h3>
-				<a routerLink="/catalog/all-categories" class="viewtxt"> View all</a>
+				<a routerLink="/catalog/all-categories" class="d-none viewtxt"> View all</a>
 			</div>
 		<div class="row mt-3 mt-lg-4">
-			<div class="col-lg-2 col-6">
-				<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/camera.jpg');">
+			<div class="col-lg-2 col-6" *ngFor="let cat of main.categories">
+				<div routerLink="/catalog/category/{{cat.id}}" class="company_categ_card d-inline-block" [ngStyle]="{'background': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('+global.ASSETS_URL+cat.category_logo+')'}">
 					<div class="company_categ_name">
-						<p class="company_categ_txt">Camera</p>
+						<p class="company_categ_txt">{{cat.category_name}}</p>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2 col-6">
-				<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/phone.jpg');">
-					<div class="company_categ_name">
-						<p class="company_categ_txt">Phone</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-6 mt-4 mt-lg-0">
-				<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/tablet.jpg');">
-					<div class="company_categ_name">
-						<p class="company_categ_txt">Tablet</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-6 mt-4 mt-lg-0">
-				<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/headphone.jpg');">
-					<div class="company_categ_name">
-						<p class="company_categ_txt">Headphone</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-6 mt-4 mt-lg-0">
-				<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/laptop.jpg');">
-					<div class="company_categ_name">
-						<p class="company_categ_txt">Laptop</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-6 mt-4 mt-lg-0">
-				<div class="company_categ_card d-inline-block" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/accessories.jpg');">
-					<div class="company_categ_name">
-						<p class="company_categ_txt">Accessories</p>
-					</div>
-				</div>		
 			</div>
 		</div>
 		<div class="d-flex justify-content-between align-items-center categories_heading mt-4 mt-lg-5">
 				<h3 class="categories_heading_txt">Popular Brands</h3>
-				<a routerLink="/catalog/all-brands" class="viewtxt"> View all</a>
+				<a routerLink="/catalog/all-brands" class="viewtxt d-none"> View all</a>
 			</div>
 		<div class="row mt-3 mt-lg-4">
-			<div class="col-lg-2 col-6">
-				<div class="brand_card" style="background: url('/assets/img/brand.png');">
-					
+			<div class="col-lg-2 col-6" *ngFor="let brand of main.brands">
+				<div class="brand_card" routerLink="/catalog/brand/{{brand.id}}">
+					<img [src]="global.ASSETS_URL+brand.brand_logo" class="mw-100">
 				</div>
 				<div class="brand_name text-center">
-					<p class="brand_txt">Xiaomi</p>
+					<p class="brand_txt">{{brand.brand_name}}</p>
 				</div>
 			</div>
-			<div class="col-lg-2 col-6">
-				<div class="brand_card" style="background: url('/assets/img/accessories.jpg');">
-					
-				</div>
-				<div class="brand_name text-center">
-					<p class="brand_txt">Apple</p>
-				</div>
-			</div>
-			<div class="col-lg-2 col-6 mt-2 mt-lg-0">
-				<div class="brand_card" style="background: url('/assets/img/brand.png');">
-					
-				</div>
-				<div class="brand_name text-center">
-					<p class="brand_txt">Samsung</p>
-				</div>
-			</div>
-			<div class="col-lg-2 col-6 mt-2 mt-lg-0">
-				<div class="brand_card" style="background: url('/assets/img/accessories.jpg');">
-				
-				</div>
-				<div class="brand_name text-center">
-					<p class="brand_txt">Del</p>
-				</div>
-			</div>
-			<div class="col-lg-2 col-6 mt-2 mt-lg-0">
-				<div class="brand_card" style="background: url('/assets/img/brand.png');">
-					
-				</div>
-				<div class="brand_name text-center">
-					<p class="brand_txt">Lenevo</p>
-				</div>
-			</div>
-			<div class="col-lg-2 col-6 mt-2 mt-lg-0">
-				<div class="brand_card" style="background: url('/assets/img/accessories.jpg');">
-					
-				</div>
-				<div class="brand_name text-center">
-					<p class="brand_txt">Hp</p>
-				</div>
-			</div>
+			
 		</div>
 		<div class="d-flex justify-content-between align-items-center categories_heading mt-4 mt-lg-5">
 				<h3 class="categories_heading_txt">Popular Products</h3>
-				<a routerLink="/products" class="viewtxt"> View all</a>
 			</div>
 		<div class="row mt-4 mb-4">
-			<div class="col-lg-4 col-12">
+			<div class="col-lg-4 col-12 mb-3" *ngFor="let product of main.top_products">
 				<div class="products d-flex justify-content-between">
-					<div>
-						<div class="p_img" style="background: url('/assets/img/camera.jpg');">
-							
+					<div class="text-center">
+						<div class="p_img">
+							<img [src]="global.ASSETS_URL+product.product_logo" class="mw-100">
 						</div>
-						<a href="#" class="btn add_btn add_btns align-items-center mt-3"> + Add</a>
+						<a href="javascript:;" (click)="main.addProductToShop(product.id)" class="btn add_btn add_btns align-items-center mt-3"> + Add</a>
 					</div>
 					<div class="description">
-						<h4 class="p_name">Proudct Name</h4>
-						<p class="p_about"><em>Price :</em> <i class="fa fa-rupee-sign"></i> 475<br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sodales turpis in mauris dignissim,
-						ac venenatis risus dictum. Integer quis suscipit nulla, eu malesuada eros. Nunc non mollis ipsum. Fusce feugiat erat 
+						<h4 class="p_name">{{product.product_name}}</h4>
+						<p class="p_about"><em>Price :</em> <i class="fa fa-rupee-sign"></i> {{product.product_price}}<br>
+						{{product.product_description.substring(0,200)}}...
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-12  mt-4 mt-lg-0">
-				<div class="products d-flex justify-content-between">
-					<div>
-						<div class="p_img" style="background: url('/assets/img/camera.jpg');">
-							
-						</div>
-						<a href="#" class="btn add_btn add_btns align-items-center mt-3"> + Add</a>
-					</div>
-					<div class="description">
-						<h4 class="p_name">Proudct Name</h4>
-						<p class="p_about"><em>Price :</em> <i class="fa fa-rupee-sign"></i> 475<br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sodales turpis in mauris dignissim,
-						ac venenatis risus dictum. Integer quis suscipit nulla, eu malesuada eros. Nunc non mollis ipsum. Fusce feugiat erat 
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-12  mt-4 mt-lg-0">
-				<div class="products d-flex justify-content-between">
-					<div>
-						<div class="p_img" style="background: url('/assets/img/camera.jpg');">
-							
-						</div>
-						<a href="#" class="btn add_btn add_btns align-items-center mt-3"> + Add</a>
-					</div>
-					<div class="description">
-						<h4 class="p_name">Proudct Name</h4>
-						<p class="p_about"><em>Price :</em> <i class="fa fa-rupee-sign"></i> 475<br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sodales turpis in mauris dignissim,
-						ac venenatis risus dictum. Integer quis suscipit nulla, eu malesuada eros. Nunc non mollis ipsum. Fusce feugiat erat 
-						</p>
-					</div>
-				</div>
-			</div>
-		</div><hr>
+		</div>
 	</div>
 </div>

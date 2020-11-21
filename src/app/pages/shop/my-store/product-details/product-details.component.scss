@@ -1,0 +1,23 @@
+
+.model-details{
+    border-radius: 15px;
+    box-shadow:0 0 20px 5px #ccce;
+    background: #fff;;
+    padding:25px;
+
+    .key-specs{
+        h4{
+            margin-bottom: 5px;;
+        }
+        ul{
+            padding-left: 10px;
+            font-size: 12px;
+        }
+    }
+}
+.inner_heading {
+    font-weight: 500;
+    color: #424242;
+    clear: both;
+    font-size: 16px;
+}

@@ -1,0 +1,48 @@
+.comp {
+	max-width: fit-content;
+    height: 130px;
+}
+
+
+tr td:first-child {
+	font-weight:700;
+}
+tr td:not(:first-child) {
+	background-color:#fff;
+	border:1px solid #e0e0e0;
+	padding-left: 25px;
+}
+
+.table th, table td {
+		font-family: Poppins;
+		font-weight: 500;
+		color: #000;
+		font-size: 14px;	
+}
+.table th, table td h5 {
+			font-size:1rem;
+			font-weight:700;			
+		}
+
+.table td {
+		border:1px solid #e0e0e0;
+		//padding: 10px;
+ }
+ .table th, table td p {
+			margin-bottom:0;	
+		}
+ 
+ @media (max-width: 800px) {
+		tr td:not(.showm):first-child {
+			display:none;
+		}
+		.table th, table td h5 {
+			font-size:14px;	
+		}
+		.table th, table td p {
+			font-size:12px;	
+		}
+		tr td:not(:first-child) {
+			padding-left: 10px;
+		}
+}	

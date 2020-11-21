@@ -1,0 +1,54 @@
+<div class="dash_section">
+	<div class="subdash pt-4">
+		<div class="container">
+			<app-shop-header></app-shop-header>
+			<div class="d-flex justify-content-between align-items-center categories_heading mt-4 mt-lg-5">
+				<h3 class="categories_heading_txt">Categories</h3>
+			</div>
+		<div class="row mt-3 mt-lg-4">
+			<div class="col-lg-2 col-6" *ngFor="let cat of main.store_categories">
+				<div routerLink="/shop/my-store/category/{{cat.id}}" class="company_categ_card d-inline-block" [ngStyle]="{'background': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('+global.ASSETS_URL+cat.category_logo+')'}">
+					<div class="company_categ_name">
+						<p class="company_categ_txt">{{cat.category_name}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="d-flex justify-content-between align-items-center categories_heading mt-4 mt-lg-5">
+				<h3 class="categories_heading_txt">Brands</h3>
+			</div>
+		<div class="row mt-3 mt-lg-4">
+			<div class="col-lg-2 col-6" *ngFor="let brand of main.store_brands">
+				<div class="brand_card" routerLink="/shop/my-store/brand/{{brand.id}}">
+					<img [src]="global.ASSETS_URL+brand.brand_logo" class="mw-100">
+				</div>
+				<div class="brand_name text-center">
+					<p class="brand_txt">{{brand.brand_name}}</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="d-flex justify-content-between align-items-center categories_heading mt-4 mt-lg-5">
+				<h3 class="categories_heading_txt">Products</h3>
+			</div>
+		<div class="row mt-4 mb-4">
+			<div class="col-lg-4 col-12 mb-3" *ngFor="let product of main.store_products" >
+				<div class="products d-flex justify-content-between" routerLink="/shop/my-store/product" (click)="setProduct(product)">
+					<div class="text-center">
+						<div class="p_img">
+							<img [src]="global.ASSETS_URL+product.catalog_product.product_logo" class="mw-100">
+						</div>
+						<a href="javascript:;"  class="btn add_btn add_btns align-items-center mt-3"> Edit</a>
+					</div>
+					<div class="description">
+						<h4 class="p_name">{{product.catalog_product.product_name}}</h4>
+						<p class="p_about"><em>Price :</em> <i class="fa fa-rupee-sign"></i> {{product.price}}<br>
+						{{product.catalog_product.product_description.substring(0,200)}}...
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>

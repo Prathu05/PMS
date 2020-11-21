@@ -1,3 +1,4 @@
+
 .main_card {
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/bg.jpg');
 		background-repeat:no-repeat;
@@ -9,7 +10,12 @@
 		border-radius: 30px;
 		padding: 30px 40px 10px 40px;
 }
-
+.hide-share{
+	height: 200px;
+	.link_card{
+		display: none;
+	}
+}
 .dash_logo {
 		background: transparent;
 		padding: 3px;
@@ -30,9 +36,9 @@
 }
 .link_card {
 		box-shadow: 4px 5px 40px rgb(0, 0, 0, 0.3);
-		border-radius: 30px;
+		border-radius: 16px;
 		background: #fff;
-		padding: 16px 33px 10px 24px;
+		padding: 20px;
 		width: 80%;
 		margin-top: 0px;
 		margin-left: auto;
@@ -40,21 +46,17 @@
 }
 .link_heading {
 		font-size: 20px;
-		font-family: 'MY-DEMI';
 		font-weight: 600;
 }
 .link_content {
 		font-size: 16px;
-		font-family: 'MY-DEMI';
 		font-weight: 400;		
 }
 .link_txt {
 		font-size: 16px;
-		font-family: 'MY-DEMI';
 		font-weight: 400;
 }
 .wp {
-		font-family:MY-DEMI;
 }
 
 
@@ -62,12 +64,23 @@
 
 @media (max-width: 800px) {
 	.main_card {
-		height:175px;
+		height:150px;
 		width:100%;
 		padding: 1px 17px 0px 17px;
+		margin-bottom: 130px;
+	}
+	.hide-share{
+		margin-bottom: 30px;
 	}
 	.logotxt {
 		margin-top: 24px;
+	}
+	.link_card {
+		box-shadow: 4px 5px 40px rgba(0, 0, 0, 0.3);
+		border-radius: 15px;
+		background: #fff;
+		padding: 15px;
+		width: 100%;
 	}
 	.dash_logo {
 		width: 85px;
@@ -77,16 +90,16 @@
 		font-size:20px;
 	}
 	.link_heading {
-		font-size:13px;
+		font-size:14px;
 	}
 	.link_content {
-		font-size:10px;
+		font-size:12px;
 	}
 	.link_txt {
-		font-size: 10px;
+		font-size: 12px;
 	}
 	.wp {
-		font-size:8px;
+		font-size:10px;
 	}
 		
 }

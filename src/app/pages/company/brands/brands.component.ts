@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from 'src/app/services/global.service';
+import { MainService } from 'src/app/services/main.service';
 
 @Component({
   selector: 'app-brands',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BrandsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public main: MainService,
+    public global: GlobalService
+  ) { }
 
   ngOnInit(): void {
   }

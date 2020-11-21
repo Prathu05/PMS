@@ -1,37 +1,41 @@
-<div class="container">
+<div class="container pt-4">
 	<app-shop-header></app-shop-header>
 	<div class="sub_card">
 		<div class="row">
 			<div class="col-lg-3 col-6">
 				<div class="card1">
-					<h4 class="card_heading">Orders<br><br>0</h4>
+					<h2>{{stats.orders}}</h2>
+					<h5 class="card_heading">Orders</h5>
 				</div>
 			</div>
 			<div class="col-lg-3 col-6">
 				<div class="card1">
-					<h4 class="card_heading">Revenue<br><br>0</h4>
+					<h2>{{stats.revenue}}</h2>
+					<h5 class="card_heading">Revenue</h5>
 				</div>
 			</div>
 			<div class="col-lg-3 col-6 mt-4 mt-lg-0">
 				<div class="card1">
-					<h4 class="card_heading">Orders<br><br>0</h4>
+					<h2>{{stats.views}}</h2>
+					<h5 class="card_heading">Store Views</h5>
 				</div>
 			</div>
 			<div class="col-lg-3 col-6 mt-4 mt-lg-0">
-				<div class="card1">
-					<h4 class="card_heading">Revenue<br><br>0</h4>
+				<div class="card1" routerLink="/shop/my-store">
+					<h2>{{stats.products}}</h2>
+					<h5 class="card_heading">Products</h5>
 				</div>
 			</div>
 		</div>
 		<div class="row mt-4">
 			<div class="col-lg-4 col-12 text-center mt-1 mt-lg-2">
-				<a href="#" class="btn sign_btn btns"> Catalogue</a>
+				<a routerLink="/shop/my-store/compare" class="btn sign_btn btns"> Compare</a>
 			</div>
 			<div class="col-lg-4 col-12 text-center mt-1 mt-lg-2">
-				<a href="#" class="btn sign_btn btns align-items-center"> + Add Products</a>
+				<a routerLink="/catalog" class="btn sign_btn btns align-items-center"> + Add Products</a>
 			</div>
 			<div class="col-lg-4 col-12 text-center mt-1 mt-lg-2">
-				<a href="#" class="btn sign_btn btns"> Account</a>
+				<a href="javascript:;" (click)="logout()" class="btn sign_btn btns"> Logout</a>
 			</div>
 		
 		

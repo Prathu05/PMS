@@ -1,0 +1,69 @@
+<div class="dash_section">
+	<div class="subdash pt-4">
+		<div class="container">
+			<app-shop-header></app-shop-header>
+			<div style="width:100%; overflow:auto;" class="mt-lg-4 mt-2">
+				<div class="compare">
+					<div *ngIf="compare_list.product_1||compare_list.product_2||compare_list.product_3" class="text-center">
+						<a href="javascript:;" (click)="share()" class="btn add_btn add_btns">Share</a>
+					</div>
+					<table class="ui celled table mt-2">
+						<thead>
+							<tr class="text-center">
+								<td></td>
+								<td>
+									<div *ngIf="compare_list.product_1">
+										<img alt="" [src]="global.ASSETS_URL+compare_list.product_1.catalog_product.product_logo" class="comp">
+										<h3>{{compare_list.product_1.catalog_product.product_name}}</h3>
+									</div>
+									<div class="text-center">
+										<a class="btn add_btn add_btns" *ngIf="!compare_list.product_1" (click)="addProduct(1)">Add Product</a>
+										<a class="btn add_btn add_btns" *ngIf="compare_list.product_1" (click)="addProduct(1)">Change Product</a>
+									</div>	
+								</td>
+								<td>
+									<div *ngIf="compare_list.product_2">
+										<img alt="" [src]="global.ASSETS_URL+compare_list.product_2.catalog_product.product_logo" class="comp">
+										<h3>{{compare_list.product_2.catalog_product.product_name}}</h3>
+									</div>
+									<div class="text-center">
+										<a class="btn add_btn add_btns" *ngIf="!compare_list.product_2" (click)="addProduct(2)">Add Product</a>
+										<a class="btn add_btn add_btns" *ngIf="compare_list.product_2" (click)="addProduct(2)">Change Product</a>
+									</div>	
+								</td>
+								<td>
+									<div *ngIf="compare_list.product_3">
+										<img alt="" [src]="global.ASSETS_URL+compare_list.product_3.catalog_product.product_logo" class="comp">
+										<h3>{{compare_list.product_3.catalog_product.product_name}}</h3>
+									</div>
+									<div class="text-center">
+										<a class="btn add_btn add_btns" *ngIf="!compare_list.product_3" (click)="addProduct(3)">Add Product</a>
+										<a class="btn add_btn add_btns" *ngIf="compare_list.product_3" (click)="addProduct(3)">Change Product</a>
+									</div>	
+								</td>
+							</tr>
+						</thead>
+						<tbody *ngIf="compare_list.product_1||compare_list.product_2||compare_list.product_3">
+							<ng-template ngFor let-at [ngForOf]="attributes" let-i="index">
+
+									<tr>
+										<td colspan="4" class="d-md-none showm">{{at.attribute_name}}</td>
+									</tr>
+									<tr >
+										<td>{{at.attribute_name}}</td>
+										<td><p *ngIf="compare_list.product_1">{{getAttributeValue(compare_list.product_1.catalog_product.specs,at.attribute_name)}}</p></td>
+										<td><p *ngIf="compare_list.product_2">{{getAttributeValue(compare_list.product_2.catalog_product.specs,at.attribute_name)}}</p></td>
+										<td><p *ngIf="compare_list.product_3">{{getAttributeValue(compare_list.product_3.catalog_product.specs,at.attribute_name)}}</p></td>
+									</tr>
+							</ng-template>
+							
+						</tbody>
+					</table>
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
