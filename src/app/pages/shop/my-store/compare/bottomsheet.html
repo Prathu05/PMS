@@ -4,6 +4,6 @@
         <input class="form-control" placeholder="Search..." (input)="filterModel($event)">
     </div>
     <div class="models">
-        <a class="w-100 d-block p-2 border-bottom text-white" style="text-decoration: none;" *ngFor="let m of searched" (click)="selectModel(m)">{{m.catalog_product.product_name}}</a>
+        <a class="w-100 d-block p-2 border-bottom " style="text-decoration: none;" *ngFor="let m of searched" (click)="selectModel(m)">{{m.catalog_product.product_name}}</a>
     </div>
 </div>

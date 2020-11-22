@@ -1,0 +1,72 @@
+<div class="container pt-4">
+    <app-shop-header></app-shop-header>
+    <div class="mt-3 mt-lg-5">
+        <div class="form-card">
+            <div class="text-center">
+                <h2>Create an Order</h2>
+            </div>
+            <div class="mt-3 mt-lg-4 w-lg-75 mx-auto">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <div class="new-input">
+                                <input class="" [(ngModel)]="name" placeholder="Customer Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <div class="new-input">
+                                <input class="" [(ngModel)]="mobile" placeholder="Customer Mobile Number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <div class="new-input">
+                                <input class="" [(ngModel)]="email" placeholder="Customer Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <div class="new-input">
+                                <input class="" [(ngModel)]="address" placeholder="Customer Address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">                
+                            <div class="new-input">
+                                <select [(ngModel)]="product" >
+                                    <option value="">Choose Product</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="form-group">                
+                            <div class="new-input">
+                                <select [(ngModel)]="promoter" >
+                                    <option value="">Choose Promoter</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mx-auto text-center mt-3">
+                        <a class="btn add_btn text-white" (click)="addCustomer()">Punch Customer</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+</div>

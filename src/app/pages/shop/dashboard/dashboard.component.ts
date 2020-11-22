@@ -13,7 +13,9 @@ export class DashboardComponent implements OnInit {
     orders:0,
     revenue:0,
     products:0,
-    views:0
+    views:0,
+    open_orders:0,
+    shares:0
   };
   constructor(
     private auth: AuthService,
@@ -30,6 +32,8 @@ export class DashboardComponent implements OnInit {
       this.stats.products=data.result.products;
       this.stats.views=data.result.views;
       this.stats.revenue=data.result.revenue;
+      this.stats.open_orders=data.result.open_orders;
+      this.stats.shares=data.result.shares;
       }
     });
   }

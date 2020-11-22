@@ -21,6 +21,8 @@ import { StoreCategoryPageComponent } from './pages/shop/my-store/store-category
 import { StoreBrandPageComponent } from './pages/shop/my-store/store-brand-page/store-brand-page.component';
 import { ProductDetailsComponent } from './pages/shop/my-store/product-details/product-details.component';
 import { CompareComponent } from './pages/shop/my-store/compare/compare.component';
+import { CreateOrderComponent } from './pages/shop/create-order/create-order.component';
+import { OpenOrdersComponent } from './pages/shop/open-orders/open-orders.component';
 
 
 const routes: Routes = [
@@ -30,8 +32,12 @@ const routes: Routes = [
 		component:LoginComponent
 	},
 	{
-		path:'orders',
+		path:'shop/orders',
 		component:OrdersComponent
+	},
+	{
+		path:'shop/open-orders',
+		component:OpenOrdersComponent
 	},
 	{
 		path:'order-details',
@@ -49,6 +55,10 @@ const routes: Routes = [
 	{
 		path:'shop/dashboard',
 		component:DashboardComponent
+	},
+	{
+		path:'shop/create-order',
+		component:CreateOrderComponent
 	},
 	{
 		path:'shop/my-store',

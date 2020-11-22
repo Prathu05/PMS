@@ -1,0 +1,36 @@
+.mobile-footer{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width:100%;
+    left:0;
+    bottom:0;
+    display: none;
+    background: #fefefe;
+    box-shadow: 0 0 10px 0 #ddd;
+    .footer-icon{
+        padding:15px 7px;
+        
+        border-right: 1px solid #ccc;;
+        text-align: center;
+        i{
+            font-size: 16px;;
+
+            margin-bottom: 8px;;
+        }
+        span{
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    .footer-icon:last-child{
+        border-right-color:transparent;
+    }
+}
+
+@media (max-width:500px){
+    .mobile-footer{
+        display: flex;
+    }
+}

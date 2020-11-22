@@ -2,39 +2,54 @@
 	<app-shop-header></app-shop-header>
 	<div class="sub_card">
 		<div class="row">
-			<div class="col-lg-3 col-6">
-				<div class="card1">
+			<div class="col-lg-2 col-6 mt-3 mt-lg-0">
+				<div class="card1" routerLink="/shop/open-orders">
+					<h2>{{stats.open_orders}}</h2>
+					<h5 class="card_heading">Open Orders</h5>
+				</div>
+			</div>
+			<div class="col-lg-2 col-6 mt-3 mt-lg-0">
+				<div class="card1" routerLink="/shop/orders">
 					<h2>{{stats.orders}}</h2>
 					<h5 class="card_heading">Orders</h5>
 				</div>
 			</div>
-			<div class="col-lg-3 col-6">
+			<div class="col-lg-2 col-6  mt-3 mt-lg-0">
 				<div class="card1">
 					<h2>{{stats.revenue}}</h2>
 					<h5 class="card_heading">Revenue</h5>
 				</div>
 			</div>
-			<div class="col-lg-3 col-6 mt-4 mt-lg-0">
+			<div class="col-lg-2 col-6 mt-3 mt-lg-0">
 				<div class="card1">
 					<h2>{{stats.views}}</h2>
 					<h5 class="card_heading">Store Views</h5>
 				</div>
 			</div>
-			<div class="col-lg-3 col-6 mt-4 mt-lg-0">
+			<div class="col-lg-2 col-6 mt-3 mt-lg-0">
+				<div class="card1">
+					<h2>{{stats.shares}}</h2>
+					<h5 class="card_heading">Link Shares</h5>
+				</div>
+			</div>
+			<div class="col-lg-2 col-6 mt-3 mt-lg-0">
 				<div class="card1" routerLink="/shop/my-store">
 					<h2>{{stats.products}}</h2>
 					<h5 class="card_heading">Products</h5>
 				</div>
 			</div>
 		</div>
-		<div class="row mt-4">
-			<div class="col-lg-4 col-12 text-center mt-1 mt-lg-2">
+		<div class="row mt-4 d-none d-sm-flex">
+			<div class="col-md-3 col-12 text-center mt-1 mt-lg-2">
 				<a routerLink="/shop/my-store/compare" class="btn sign_btn btns"> Compare</a>
 			</div>
-			<div class="col-lg-4 col-12 text-center mt-1 mt-lg-2">
-				<a routerLink="/catalog" class="btn sign_btn btns align-items-center"> + Add Products</a>
+			<div class="col-md-3 col-12 text-center mt-1 mt-lg-2">
+				<a routerLink="/shop/create-order" class="btn sign_btn btns"> Create Order</a>
 			</div>
-			<div class="col-lg-4 col-12 text-center mt-1 mt-lg-2">
+			<div class="col-md-3 col-12 text-center mt-1 mt-lg-2">
+				<a routerLink="/catalog" class="btn sign_btn btns align-items-center">Add Product</a>
+			</div>
+			<div class="col-md-3 col-12 text-center mt-1 mt-lg-2">
 				<a href="javascript:;" (click)="logout()" class="btn sign_btn btns"> Logout</a>
 			</div>
 		

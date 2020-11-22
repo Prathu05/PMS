@@ -38,6 +38,9 @@ import { CompareComponent } from './pages/shop/my-store/compare/compare.componen
 
 
 import { BottomSheet } from './pages/shop/my-store/compare/bottomsheet';
+import { CreateOrderComponent } from './pages/shop/create-order/create-order.component';
+import { MobileFooterComponent } from './layout/mobile-footer/mobile-footer.component';
+import { OpenOrdersComponent } from './pages/shop/open-orders/open-orders.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +68,10 @@ import { BottomSheet } from './pages/shop/my-store/compare/bottomsheet';
     StoreCategoryBrandPageComponent,
     ProductDetailsComponent,
     CompareComponent,
-    BottomSheet
+    BottomSheet,
+    CreateOrderComponent,
+    MobileFooterComponent,
+    OpenOrdersComponent
   ],
   imports: [
     BrowserModule,
